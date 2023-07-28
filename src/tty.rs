@@ -93,7 +93,7 @@ pub fn open_tty() {
         //.arg("-h")
         .arg("9600")
         .arg("tty1")
-        //.arg("vtxxx")
+        .arg("vtxxx")
         .spawn();
     match agetty {
         Ok(_) => {println!("Agetty thinks it worked")},
