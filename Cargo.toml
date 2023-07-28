@@ -1,5 +1,5 @@
 [package]
-name = "twinit"
+name = "goofy-init"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,3 +8,9 @@ edition = "2021"
 [dependencies]
 rust-ini = "0.19"
 system_shutdown = "*"
+sys-mount = "2.0.2"
+
+
+[patch.crates-io.loopdev]
+git = "https://github.com/mulkieran/loopdev"
+branch = "bump-bindgen-reduce-version"
